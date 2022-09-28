@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="nilai"><br>
+    <button onclick="tampil()">cek</button>
+    <div class="box">
+    <p id="tampil"></p>
+</div>
+
+    <script>
+        function tampil(){
+            
+        let hasil = ""
+        let nilai = document.getElementById('nilai').value
+        if (nilai <= 19) {
+            hasil = "nilai anda e"
+        }
+        else if (nilai <= 49) {
+            hasil = "nilai anda d"
+        }
+        else if (nilai <= 69) {
+            hasil = "nilai anda c"
+        }
+        else if (nilai <= 89) {
+            hasil = "nilai anda b"
+        }
+        else if (nilai <= 100) {
+            hasil = "nilai anda a"
+        }   
+            
+
+        document.getElementById('tampil').innerHTML = hasil
+        }
+
+
+    </script>
+</body>
+
+</html>
